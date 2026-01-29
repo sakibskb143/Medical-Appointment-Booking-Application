@@ -1,0 +1,134 @@
+[
+  {
+    "image": "https://i.ibb.co/k6sDqh4v/doctor1.jpg",
+    "name": "Dr. Ahsan Rahman",
+    "education": "MBBS, FCPS",
+    "speciality": "Cardiology",
+    "experience": "12 Years",
+    "registrationNumber": "BMDC-10101",
+    "availability": ["Sunday", "Tuesday", "Thursday"],
+    "workingHospital": "National Heart Foundation Hospital, Dhaka",
+    "consultationFee": 1200
+  },
+  {
+    "image": "https://i.ibb.co/LDV16F1v/doctor2.jpg",
+    "name": "Dr. Saima Ahmed",
+    "education": "MBBS, MS",
+    "speciality": "Gynecology",
+    "experience": "9 Years",
+    "registrationNumber": "BMDC-10102",
+    "availability": ["Monday", "Wednesday", "Saturday"],
+    "workingHospital": "Square Hospital Ltd., Dhaka",
+    "consultationFee": 1000
+  },
+  {
+    "image": "https://i.ibb.co/JjQfYVV2/doctor3.jpg",
+    "name": "Dr. Kamal Hossain",
+    "education": "MBBS, MD",
+    "speciality": "Neurology",
+    "experience": "15 Years",
+    "registrationNumber": "BMDC-10103",
+    "availability": ["Sunday", "Monday", "Thursday"],
+    "workingHospital": "Bangabandhu Sheikh Mujib Medical University (BSMMU)",
+    "consultationFee": 1500
+  },
+  {
+    "image": "https://i.ibb.co/XTHKYM0/doctor4.jpg",
+    "name": "Dr. Farzana Islam",
+    "education": "MBBS, FCPS",
+    "speciality": "Dermatology",
+    "experience": "7 Years",
+    "registrationNumber": "BMDC-10104",
+    "availability": ["Tuesday", "Thursday"],
+    "workingHospital": "Popular Diagnostic Centre Ltd.",
+    "consultationFee": 800
+  },
+  {
+    "image": "https://i.ibb.co/3ypSZ5hK/doctor5.jpg",
+    "name": "Dr. Tanvir Hasan",
+    "education": "MBBS, MS",
+    "speciality": "Orthopedics",
+    "experience": "10 Years",
+    "registrationNumber": "BMDC-10105",
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "workingHospital": "Apollo Hospitals Dhaka",
+    "consultationFee": 1300
+  },
+  {
+    "image": "https://i.ibb.co/pB8FjFwT/doctor6.jpg",
+    "name": "Dr. Nusrat Jahan",
+    "education": "MBBS, DGO",
+    "speciality": "Obstetrics",
+    "experience": "8 Years",
+    "registrationNumber": "BMDC-10106",
+    "availability": ["Sunday", "Tuesday"],
+    "workingHospital": "Labaid Specialized Hospital",
+    "consultationFee": 900
+  },
+  {
+    "image": "https://i.ibb.co/Q3VW7p6m/doctor7.jpg",
+    "name": "Dr. Imran Siddique",
+    "education": "MBBS, FCPS",
+    "speciality": "Medicine",
+    "experience": "14 Years",
+    "registrationNumber": "BMDC-10107",
+    "availability": ["Monday", "Thursday", "Saturday"],
+    "workingHospital": "United Hospital Limited",
+    "consultationFee": 1100
+  },
+  {
+    "image": "https://i.ibb.co/ZRMPYggq/doctor8.jpg",
+    "name": "Dr. Mahbub Alam",
+    "education": "MBBS, MS",
+    "speciality": "General Surgery",
+    "experience": "11 Years",
+    "registrationNumber": "BMDC-10108",
+    "availability": ["Sunday", "Wednesday"],
+    "workingHospital": "Dhaka Medical College Hospital",
+    "consultationFee": 1200
+  },
+  {
+    "image": "https://i.ibb.co/ZRMPYggq/doctor9.jpg",
+    "name": "Dr. Rashed Khan",
+    "education": "MBBS, MD",
+    "speciality": "Endocrinology",
+    "experience": "6 Years",
+    "registrationNumber": "BMDC-10109",
+    "availability": ["Tuesday", "Friday"],
+    "workingHospital": "Ibn Sina Diagnostic & Consultation Center",
+    "consultationFee": 1000
+  },
+  {
+    "image": "https://i.ibb.co/sppFhD8H/doctor10.jpg",
+    "name": "Dr. Sabrina Noor",
+    "education": "MBBS, FCPS",
+    "speciality": "Pediatrics",
+    "experience": "9 Years",
+    "registrationNumber": "BMDC-10110",
+    "availability": ["Monday", "Wednesday", "Saturday"],
+    "workingHospital": "Shishu Hospital & Institute, Dhaka",
+    "consultationFee": 950
+  },
+  {
+    "image": "https://i.ibb.co/Z1tTXCKz/doctor11.jpg",
+    "name": "Dr. Faisal Mahmud",
+    "education": "MBBS, MS",
+    "speciality": "Urology",
+    "experience": "13 Years",
+    "registrationNumber": "BMDC-10111",
+    "availability": ["Sunday", "Thursday"],
+    "workingHospital": "Evercare Hospital Dhaka",
+    "consultationFee": 1400
+  },
+  {
+    "image": "https://i.ibb.co/sppFhD8H/doctor12.jpg",
+    "name": "Dr. Sharmin Akter",
+    "education": "MBBS, FCPS",
+    "speciality": "Ophthalmology",
+    "experience": "5 Years",
+    "registrationNumber": "BMDC-10112",
+    "availability": ["Tuesday", "Wednesday", "Friday"],
+    "workingHospital": "Vision Eye Hospital, Dhaka",
+    "consultationFee": 800
+  }
+]
