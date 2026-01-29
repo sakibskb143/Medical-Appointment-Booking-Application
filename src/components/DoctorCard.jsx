@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiFillTrademarkCircle } from "react-icons/ai";
 import defaultDoctor from "../assets/doctor-sample.png";
+import { Link } from "react-router";
 
 const DoctorCard = ({ doctorData }) => {
   console.log(doctorData);
@@ -12,7 +13,6 @@ const DoctorCard = ({ doctorData }) => {
     experience,
     education,
     registrationNumber,
-    speciality,
     availability,
   } = doctorData;
 
@@ -66,15 +66,15 @@ const DoctorCard = ({ doctorData }) => {
           <h1 className="text-color text-sm ">Reg no :{registrationNumber}</h1>
         </div>
         <div className="w-full ">
-          <a
-            href="#_"
+          <Link
+            to={`/doctor/${registrationNumber}`}
             class="relative inline-flex  items-center justify-start inline-block px-5 btn overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group w-full hover:border-blue-500"
           >
             <span class="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
             <span class="relative w-full  text-white text-center transition-colors duration-200 ease-in-out group-hover:text-blue-600 ">
               View Details
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </article>
