@@ -4,6 +4,7 @@ import { Component } from "react";
 import Home from "../pages/Home";
 import DoctorDetails from "../pages/DoctorDetails";
 import BookingPage from "../pages/BookingPage";
+import Blogs from "../pages/Blogs";
 
 export const router = createBrowserRouter([
   {
@@ -21,9 +22,14 @@ export const router = createBrowserRouter([
         Component: DoctorDetails,
       },
       {
-        path:"/bookingPage",
-        Component:BookingPage
-      }
+        path: "/bookingPage",
+        Component: BookingPage,
+      },
+      {
+        path: "/blogs",
+        loader:()=>fetch('questionAns.json'),
+        Component: Blogs,
+      },
     ],
   },
 ]);

@@ -15,7 +15,7 @@ const Footer = () => {
       </NavLink>
 
       <NavLink
-        to={"/my-bookings"}
+        to={"/bookingPage"}
         className={({ isActive }) =>
           isActive ? "text-color border-b-2 font-bold" : "text-color"
         }
@@ -29,14 +29,6 @@ const Footer = () => {
         }
       >
         Blogs
-      </NavLink>
-      <NavLink
-        to={"/contactUs"}
-        className={({ isActive }) =>
-          isActive ? "text-color uborder-b-2 font-bold" : "text-color"
-        }
-      >
-        ContactUs
       </NavLink>
     </>
   );

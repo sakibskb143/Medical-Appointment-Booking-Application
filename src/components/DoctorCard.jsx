@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AiFillTrademarkCircle } from "react-icons/ai";
 import defaultDoctor from "../assets/doctor-sample.png";
 import { Link } from "react-router";
@@ -30,7 +30,7 @@ const DoctorCard = ({ doctorData }) => {
   }, [availability]);
 
   return (
-    <article className="flex flex-col p-5  rounded-2xl bg-white">
+    <article className="flex flex-col p-5  rounded-2xl bg-white transition-all hover:scale-105 duration-300 case-in-out">
       <a
         rel="noopener noreferrer"
         href="#"
@@ -42,11 +42,11 @@ const DoctorCard = ({ doctorData }) => {
           src={image || defaultDoctor}
         />
       </a>
-      <div className="flex gap-5 pt-5">
-        <div className={`${isAvailable?'text-green-500 bg-green-100':'text-red-500 bg-red-100'} bg-opacity-20 overflow-hidden btn  rounded-2xl`}>
+      <div className="flex  gap-5 pt-5 overflow-hidded flex-wrap">
+        <div className={`${isAvailable?'text-green-500 bg-green-100':'text-red-500 bg-red-100'} bg-opacity-20 overflow-hidden btn p-2 rounded-2xl text-xs`}>
           {isAvailable?'Availability':'Unavailability'}
         </div>
-        <div className="text-blue-500 bg-blue-200  bg-opacity-20 overflow-hidden btn  rounded-2xl">
+        <div className="text-blue-500 bg-blue-200  bg-opacity-20 overflow-hidden   rounded-2xl text-xs btn p-2">
           {experience} Experience
         </div>
       </div>

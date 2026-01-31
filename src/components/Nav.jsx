@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router";
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
 
 const Nav = () => {
   const links = (
@@ -15,7 +15,7 @@ const Nav = () => {
       </NavLink>
 
       <NavLink
-        to={"/my-bookings"}
+        to={"/bookingPage"}
         className={({ isActive }) =>
           isActive ? "text-color border-b-2 font-bold" : "text-color"
         }
@@ -30,21 +30,21 @@ const Nav = () => {
       >
         Blogs
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to={"/contactUs"}
         className={({ isActive }) =>
           isActive ? "text-color uborder-b-2 font-bold" : "text-color"
         }
       >
         ContactUs
-      </NavLink>
+      </NavLink> */}
     </>
   );
   return (
-    <div className="navbar fixed z-10 bg-base-300 px-4 sm:px-8 md:px-16 mx-auto">
+    <div className="navbar fixed z-10 bg-base-300  container ">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="pr-5 lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -69,7 +69,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className="flex justify-center items-center gap-4">
-            <img src={logo} className="h-8" alt="" />
+          <img src={logo} className="h-8" alt="" />
           <Link to={"/"} className="text-2xl font-bold">
             MiniCare
           </Link>
@@ -79,7 +79,16 @@ const Nav = () => {
         <ul className="menu menu-horizontal px-2 gap-10">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-bg">Emergency</a>
+        <a
+          href="#_"
+          className="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
+        >
+          <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+          <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
+            Emergency
+          </span>
+        </a>
+        
       </div>
     </div>
   );

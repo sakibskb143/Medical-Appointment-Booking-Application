@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { useLoaderData } from "react-router";
+import { useLoaderData} from "react-router";
 import DoctorCard from "./DoctorCard";
+import Loading from "./Loading";
 
 const Doctors = () => {
   const [loadAll,setLoadAll]= useState(false);
@@ -8,6 +9,8 @@ const Doctors = () => {
   const handleLoadingAll =()=>{
     setLoadAll(true);
   }
+
+ 
 
   return (
     <section className="mb-10">
@@ -40,10 +43,10 @@ const Doctors = () => {
           <div className={`${loadAll?'hidden':'text-center '}`}>
           <a
             onClick={()=>handleLoadingAll()}
-            class="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
+            className="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
           >
-            <span class="absolute inset-0 border-0 group-hover:border-[25px] cursor-pointer ease-linear duration-100 transition-all border-white rounded-full"></span>
-            <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
+            <span className="absolute inset-0 border-0 group-hover:border-[25px] cursor-pointer ease-linear duration-100 transition-all border-white rounded-full"></span>
+            <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
               View All Doctors
             </span>
           </a>

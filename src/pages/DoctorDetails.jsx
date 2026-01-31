@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { Link, useLoaderData, useParams } from "react-router";
 import defaultDoctor from "../assets/doctor-sample.png";
 import { AiFillTrademarkCircle, AiFillExclamationCircle } from "react-icons/ai";
 import { getBookings, saveBookings } from "../utilities/utilities";
@@ -162,7 +162,8 @@ const DoctorDetails = () => {
         </div>
 
         {/* BUTTON */}
-        <button
+        <Link
+          to={`${isAvailable?'/bookingPage':''}`}
           onClick={handleAppointment}
           disabled={!isAvailable}
           className={`relative inline-flex items-center justify-center px-5 py-3 w-full rounded-full font-medium transition-all
@@ -180,7 +181,7 @@ const DoctorDetails = () => {
             : appoint
             ? "Book Appointment Now"
             : "Already Booked"}
-        </button>
+        </Link>
       </div>
     </div>
   );

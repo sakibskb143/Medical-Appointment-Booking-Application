@@ -34,6 +34,7 @@ const removeBookings = (regisNo) => {
 
   localStorage.setItem('bookings', JSON.stringify(updatedBookings));
   
+  
 };
 
 export {getBookings,saveBookings,removeBookings};
